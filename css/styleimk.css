@@ -6,3 +6,28 @@
 	color:#043687;
 	background-color: transparent;
 }
+
+.tigabawahkecil{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	border: 0px;
+	color:#043687;
+	background-color: transparent;
+}
+
+.post{
+	font-weight: bold;
+	font-size: 18px;
+	border: 0px;
+	padding: 5px;
+	background-color: rgb(44, 62, 80);
+}
+
+#replytext, #replytext1, #replytext2{
+	display: none;
+}
+
+#replytext:target, #replytext1:target, #replytext2:target{
+	display: block;
+}

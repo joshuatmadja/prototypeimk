@@ -12,6 +12,7 @@
     <title>Forums</title>
     <!-- Expandable Textfield -->
 	<link href="css/stylesearch.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style2.css">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -81,7 +82,7 @@
                         <a href="">Friends</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="">Forum</a>
+                        <a href="forum.html">Forum</a>
                     </li>
                     <li class="page-scroll">
                         <a href="">Create Community</a>
@@ -128,7 +129,7 @@
 								<td colspan=2; style="color: black;"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in malesuada velit. Donec dapibus sit amet arcu in tincidunt. Fusce consectetur non massa ut malesuada. Proin at neque justo. Etiam vulputate sem nec nibh commodo mattis eu faucibus velit. Integer et sem hendrerit, pellentesque dui nec, facilisis nibh. Vivamus quis est rutrum, malesuada enim vehicula, varius sapien. Phasellus lacinia, felis et elementum eleifend, ante quam tincidunt orci, hendrerit tincidunt erat metus nec sapien. Nunc ut risus in erat egestas lacinia. Etiam risus eros, pharetra a est a, mollis pretium ipsum. Vestibulum venenatis felis enim, eget ultrices risus bibendum eu. Maecenas ut lectus cursus, ullamcorper neque eget, fermentum massa. In fringilla arcu non metus lacinia euismod. Maecenas eget turpis justo. Suspendisse nec dapibus dolor, ac tempus ligula. </i></td>
 								</tr>
 								<tr align=right>
-								<td style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah1">1</span> <span id="likes1">like</span> 1 comment</span>  <button class="tigabawah" onclick='like(this,"jumlah1","likes1")'>Like</button> | <button class="tigabawah">Comment</button> | <button class="tigabawah">Report</button></td>
+								<td style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah1">1</span> <span id="likes1">like</span> 1 comment</span>  <button class="tigabawah" onclick='like(this,"jumlah1","likes1")'>Like</button> | <button class="tigabawah" onclick="location.href='comments.html'">Comment</button> | <button class="tigabawah" onclick="location.href='#popup'">Report</button></td>
 								</tr>
 								</table>
 							</div>
@@ -143,11 +144,31 @@
 								<td colspan=2; style="color: black;"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in malesuada velit. Donec dapibus sit amet arcu in tincidunt. Fusce consectetur non massa ut malesuada. Proin at neque justo. Etiam vulputate sem nec nibh commodo mattis eu faucibus velit. Integer et sem hendrerit, pellentesque dui nec, facilisis nibh. Vivamus quis est rutrum, malesuada enim vehicula, varius sapien. Phasellus lacinia, felis et elementum eleifend, ante quam tincidunt orci, hendrerit tincidunt erat metus nec sapien. Nunc ut risus in erat egestas lacinia. Etiam risus eros, pharetra a est a, mollis pretium ipsum. Vestibulum venenatis felis enim, eget ultrices risus bibendum eu. Maecenas ut lectus cursus, ullamcorper neque eget, fermentum massa. In fringilla arcu non metus lacinia euismod. Maecenas eget turpis justo. Suspendisse nec dapibus dolor, ac tempus ligula. </i></td>
 								</tr>
 								<tr align=right>
-								<td style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah2">1</span> <span id="likes2">like</span> 1 comment</span>  <button class="tigabawah" onclick="like(this,'jumlah2','likes2')">Like</button> | <button class="tigabawah">Comment</button> | <button class="tigabawah">Report</button></td>
+								<td style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah2">1</span> <span id="likes2">like</span> 1 comment</span>  <button class="tigabawah" onclick="like(this,'jumlah2','likes2')">Like</button> | <button class="tigabawah" onclick="location.href='comments.html'">Comment</button> | <button class="tigabawah" onclick="location.href='#popup'">Report</button></td>
 								</tr>
 								</table>
 							</div>
 						</div>	
+						<div id="popup">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br><br>
+                            <a href="#spam" class="close-button" title="close" style="color:blue; font-weight:bold;">Report as spam</a>
+                            <br>
+                            <a href="#inappropriate" class="close-button" title="close" style="color:blue; font-weight:bold;">Report as inappropriate</a>
+                            </div>
+                        </div>
+                        <div id="spam">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br>
+                            <h5 style="color:black;">Reported as spam</h5>
+                            </div>
+                        </div>
+                        <div id="inappropriate">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br>
+                            <h5 style="color:black;">Reported as inappropriate</h5>
+                            </div>
+                        </div>
 						<!-- <div class="row">
 							<span class="name" style="font-size:20px;float:left">Public</span><br><hr>
 							<br>
@@ -196,6 +217,9 @@
 
 	<!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-1.10.0.min.js'></script>
+
+    <script src="js/index2.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>

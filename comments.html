@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Forum Title 1</title>
+    <!-- Expandable Textfield -->
+	<link href="css/stylesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+    <link href="css/styleimk.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+    	function like(obj,jml,likes){
+    		var a = parseInt(document.getElementById(jml).innerHTML);
+    		if(obj.innerHTML=="Like"){
+    			document.getElementById(jml).innerHTML = a+1;
+    			obj.innerHTML="Liked";
+    			if(a+1==1) document.getElementById(likes).innerHTML="like";
+    			else document.getElementById(likes).innerHTML="likes";
+    		}
+    		else if(obj.innerHTML=="Liked"){
+    			document.getElementById(jml).innerHTML = a-1;
+    			obj.innerHTML="Like";
+    			if(a-1==1) document.getElementById(likes).innerHTML="like";
+    			else document.getElementById(likes).innerHTML="likes";
+    		}
+    	}
+
+        function countChar(val) {
+        var len = val.value.length;
+        if (len >= 500) {
+          val.value = val.value.substring(0, 500);
+        } else {
+          $('#charcount').text(500 - len);
+        }
+      };
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+	<!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Horas.io</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href=""></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="register.html">Profile</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="">Friends</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="forum.html">Forum</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="">Create Community</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="">Event</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="">Sign Out</a>
+                    </li>
+                    <li class="page-scroll">
+							<form id="custom-search-form" class="form-search form-horizontal pull-right">
+								<div class="input-append span12" style="margin-top:10px;margin-left:10px">
+									<input type="text" class="search-query" placeholder="Search">
+									<a href="">
+									<img src="img/2.png" height="25px" width="25px">
+									</a>
+								</div>
+							</form>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+	<header style="background-color:#848201" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+                        <span class="name" style="font-size:35px">FORUM TITLE 1</span>
+                        <span class="name" style="font-size: 20px">by Username</span>
+                        <hr class="star-light">
+                        <br>
+                        <br>
+                        <div class="row" style="font-family: 'Lato';" style="background-color: white">
+							<div class="portfolio-item" style="border: 3px #b6bac1 solid; background: white;">
+								<table class="table">
+								<tr align=left>
+								<td colspan=2; style="color: black;"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in malesuada velit. Donec dapibus sit amet arcu in tincidunt. Fusce consectetur non massa ut malesuada. Proin at neque justo. Etiam vulputate sem nec nibh commodo mattis eu faucibus velit. Integer et sem hendrerit, pellentesque dui nec, facilisis nibh. Vivamus quis est rutrum, malesuada enim vehicula, varius sapien. Phasellus lacinia, felis et elementum eleifend, ante quam tincidunt orci, hendrerit tincidunt erat metus nec sapien. Nunc ut risus in erat egestas lacinia. Etiam risus eros, pharetra a est a, mollis pretium ipsum. Vestibulum venenatis felis enim, eget ultrices risus bibendum eu. Maecenas ut lectus cursus, ullamcorper neque eget, fermentum massa. In fringilla arcu non metus lacinia euismod. Maecenas eget turpis justo. Suspendisse nec dapibus dolor, ac tempus ligula. </i></td>
+								</tr>
+								<tr align=right>
+								<td style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah1">1</span> <span id="likes1">like</span> 1 comment</span>  <button class="tigabawah" onclick='like(this,"jumlah1","likes1")'>Like</button> | <button class="tigabawah" onclick="location.href='#popup'">Report</button></td>
+								</tr>
+								</table>
+							</div>
+						</div>	
+						<div class="row" style="font-family: 'Lato'; ">
+							<span class="name" align=left style="font-size:20px;float:left">comments</span><br><hr>
+                            <div class="col-lg-10" style="background-color: white">
+                                <table class="table">
+                                <tr>
+                                <td align=left>
+                                <textarea style="width:100%; color:black;" align=left onkeyup="countChar(this)" placeholder="Enter your comment here....."></textarea>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td align="right"><span id="charcount" style="color: black;">500</span><div></div><button class="post" onclick="location.href='#commentposted'">POST</button></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="font-family: 'Lato';">
+							<div class="portofolio-item col-lg-10" style="background-color:white;">
+								<table class="table">
+                                <tr>
+                                <td rowspan="2"><img src="img/profile.png" style="height: 50px; width: 50px"></td>
+                                <td align=left style="font-weight: bold; font-size: 20px; color:black;">usernameWhoComments</td>
+                                </tr>
+								<tr align=left>
+								<td style="color: black;"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in malesuada velit. Donec dapibus sit amet arcu in tincidunt. Fusce consectetur non massa ut malesuada. Proin at neque justo. Etiam vulputate sem nec nibh commodo mattis eu faucibus velit. Integer et sem hendrerit, pellentesque dui nec, facilisis nibh. Vivamus quis est rutrum, malesuada enim vehicula, varius sapien. Phasellus lacinia, felis et elementum eleifend, ante quam tincidunt orci, hendrerit tincidunt erat metus nec sapien. Nunc ut risus in erat egestas lacinia. Etiam risus eros, pharetra a est a, mollis pretium ipsum. Vestibulum venenatis felis enim, eget ultrices risus bibendum eu. Maecenas ut lectus cursus, ullamcorper neque eget, fermentum massa. In fringilla arcu non metus lacinia euismod. Maecenas eget turpis justo. Suspendisse nec dapibus dolor, ac tempus ligula. </i></td>
+								</tr>
+								<tr align=right>
+								<td colspan=2 style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah3">1</span> <span id="likes3">like</span></span>  <button class="tigabawahkecil" onclick="like(this,'jumlah3','likes3')">Like</button> | <button class="tigabawahkecil" onclick="location.href='#replytext'">Reply</button> | <button class="tigabawahkecil" onclick="location.href='#popup'">Report</button></td>
+								</tr>
+								</table>
+							</div>
+						</div>
+                        <div id="replytext" class="row" style="font-family: 'Lato'; ">
+                            <div class="col-lg-10" style="background-color: white; padding-left: 100px">
+                                <table class="table">
+                                <tr>
+                                <td align=right>
+                                <textarea style="width:100%; color:black;" align=left onkeyup="countChar(this)" placeholder="Enter your reply here....."></textarea>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td align="right"><span id="charcount" style="color: black;">500</span><div></div><button class="post" onclick="location.href='#replyposted'">POST</button></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row" style="font-family: 'Lato';">
+                            <!-- <div class="col-lg-1"></div> -->
+                            <div class="col-lg-10" style="background-color: white; padding-left: 100px">
+                                <table class="table">
+                                <tr>
+                                <td rowspan="2"><img src="img/profile.png" style="height: 50px; width: 50px"></td>
+                                <td align=left style="font-weight: bold; font-size: 18px; color:black;">usernameWhoRepliesTheComment</td>
+                                </tr>
+                                <tr align=left>
+                                <td style="color: black;"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in malesuada velit. Donec dapibus sit amet arcu in tincidunt. Fusce consectetur non massa ut malesuada. Proin at neque justo. Etiam vulputate sem nec nibh commodo mattis eu faucibus velit. Integer et sem hendrerit, pellentesque dui nec, facilisis nibh. Vivamus quis est rutrum, malesuada enim vehicula, varius sapien. Phasellus lacinia, felis et elementum eleifend, ante quam tincidunt orci, hendrerit tincidunt erat metus nec sapien. Nunc ut risus in erat egestas lacinia. Etiam risus eros, pharetra a est a, mollis pretium ipsum. Vestibulum venenatis felis enim, eget ultrices risus bibendum eu. Maecenas ut lectus cursus, ullamcorper neque eget, fermentum massa. In fringilla arcu non metus lacinia euismod. Maecenas eget turpis justo. Suspendisse nec dapibus dolor, ac tempus ligula. </i></td>
+                                </tr>
+                                <tr align=right>
+                                <td colspan=2 style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah4">1</span> <span id="likes4">like</span></span> <button class="tigabawahkecil" onclick="like(this,'jumlah4','likes4')">Like</button> | <button class="tigabawahkecil" onclick="location.href='#replytext1'">Reply</button> | <button class="tigabawahkecil" onclick="location.href='#popup'">Report</button></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="replytext1" class="row" style="font-family: 'Lato'; ">
+                            <div class="col-lg-10" style="background-color: white; padding-left: 150px">
+                                <table class="table">
+                                <tr>
+                                <td align=right>
+                                <textarea style="width:100%; color:black;" align=left onkeyup="countChar(this)" placeholder="Enter your reply here....."></textarea>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td align="right"><span id="charcount" style="color: black;">500</span><div></div><button class="post" onclick="location.href='#replyposted'">POST</button></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row" style="font-family: 'Lato'; ">
+                            <div class="col-lg-10" style="background-color: white; padding-left: 100px">
+                                <table class="table">
+                                <tr>
+                                <td rowspan="2"><img src="img/profile.png" style="height: 50px; width: 50px"></td>
+                                <td align=left style="font-weight: bold; font-size: 18px; color:black;">usernameWhoRepliesTheReplyInTheComment</td>
+                                </tr>
+                                <tr align=left>
+                                <td style="color: black;"><b>@usernameWhoRepliesTheComment</b> <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in malesuada velit. Donec dapibus sit amet arcu in tincidunt. Fusce consectetur non massa ut malesuada. Proin at neque justo. Etiam vulputate sem nec nibh commodo mattis eu faucibus velit. Integer et sem hendrerit, pellentesque dui nec, facilisis nibh. Vivamus quis est rutrum, malesuada enim vehicula, varius sapien. Phasellus lacinia, felis et elementum eleifend, ante quam tincidunt orci, hendrerit tincidunt erat metus nec sapien. Nunc ut risus in erat egestas lacinia. Etiam risus eros, pharetra a est a, mollis pretium ipsum. Vestibulum venenatis felis enim, eget ultrices risus bibendum eu. Maecenas ut lectus cursus, ullamcorper neque eget, fermentum massa. In fringilla arcu non metus lacinia euismod. Maecenas eget turpis justo. Suspendisse nec dapibus dolor, ac tempus ligula. </i></td>
+                                </tr>
+                                <tr align=right>
+                                <td colspan=2 style="color: black;"><span style="font-weight: bold; font-size: 14px; color:black;" align=right><span id="jumlah5">1</span> <span id="likes5">like</span></span>  <button class="tigabawahkecil" onclick="like(this,'jumlah5','likes5')">Like</button> | <button class="tigabawahkecil" onclick="location.href='#replytext2'">Reply</button> | <button class="tigabawahkecil" onclick="location.href='#popup'">Report</button></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="replytext2" class="row" style="font-family: 'Lato'; ">
+                            <div class="col-lg-10" style="background-color: white; padding-left: 150px">
+                                <table class="table">
+                                <tr>
+                                <td align=right>
+                                <textarea style="width:100%; color:black;" align=left onkeyup="countChar(this)" placeholder="Enter your reply here....."></textarea>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td align="right"><span id="charcount" style="color: black;">500</span><div></div><button class="post" onclick="location.href='#replyposted'">POST</button></td>
+                                </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="popup">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br><br>
+                            <a href="#spam" class="close-button" title="close" style="color:blue; font-weight:bold;">Report as spam</a>
+                            <br>
+                            <a href="#inappropriate" class="close-button" title="close" style="color:blue; font-weight:bold;">Report as inappropriate</a>
+                            </div>
+                        </div>
+                        <div id="spam">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br>
+                            <h5 style="color:black;">Reported as spam</h5>
+                            </div>
+                        </div>
+                        <div id="inappropriate">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br>
+                            <h5 style="color:black;">Reported as inappropriate</h5>
+                            </div>
+                        </div>
+                        <div id="commentposted">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br>
+                            <h5 style="color:black;">Your comment has been posted</h5>
+                            </div>
+                        </div>
+                        <div id="replyposted">
+                            <div class="window">
+                            <a href="#" class="close-button" title="close">X</a><br>
+                            <h5 style="color:black;">Your reply in this comment has been posted</h5>
+                            </div>
+                        </div>
+						<!-- <div class="row">
+							<span class="name" style="font-size:20px;float:left">Public</span><br><hr>
+							<br>
+							<div class="col-sm-4 portfolio-item">
+								<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+									<div class="caption">
+										<div class="caption-content">
+											<i class="fa fa-search-plus fa-3x"></i><br>
+											Game
+										</div>
+									</div>
+									<img src="img/portfolio/game.png" class="img-responsive" alt="">
+								</a>
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+									<div class="caption">
+										<div class="caption-content">
+											<i class="fa fa-search-plus fa-3x"></i><br>
+											Money
+										</div>
+									</div>
+									<img src="img/portfolio/safe.png" class="img-responsive" alt="">
+								</a>
+							</div>
+							<div class="col-sm-4 portfolio-item">
+								<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+									<div class="caption">
+										<div class="caption-content">
+											<i class="fa fa-search-plus fa-3x"></i><br>
+											Sea
+										</div>
+									</div>
+									<img src="img/portfolio/submarine.png" class="img-responsive" alt="">
+								</a>
+							</div>
+							
+						</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+	<!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src='https://code.jquery.com/jquery-1.10.0.min.js'></script>
+
+    <script src="js/index2.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
+
+

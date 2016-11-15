@@ -83,7 +83,7 @@ html .login-wrap:after {
   border-radius: 5px 5px 0 0;
 }
 
-#popup {
+#popup, #spam, #inappropriate, #commentposted, #replyposted {
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -94,7 +94,7 @@ html .login-wrap:after {
 	visibility: hidden;
 }
 
-#popup:target{
+#popup:target, #spam:target, #inappropriate:target, #commentposted:target, #replyposted:target{
 	visibility: visible;
 }
 
