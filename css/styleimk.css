@@ -31,3 +31,12 @@
 #replytext:target, #replytext1:target, #replytext2:target{
 	display: block;
 }
+
+#createforum{
+	color: white;
+}
+
+#createforum: hover{
+	text-decoration: none;
+	color: inherit;
+}
