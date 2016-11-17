@@ -1,0 +1,39 @@
+.sidebar_size {
+	padding-top: 150px;
+	padding-bottom: 50px;
+	width: 22%;
+	position : fixed;
+}
+
+.sidebar {
+    list-style: none;
+    background-color: #f1f1f1;
+    
+}
+
+.li_tata {
+    display: block;
+    color: #000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    text-decoration: none;
+    font-size: 15pt;
+}
+
+/* Change the link color on hover */
+.li_tata:hover {
+    background-color: #555;
+    color: white;
+}
+
+.active_tata {
+	background-color: #ffffff;
+    color: white;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 0;
+    text-decoration: none;
+    font-size: 15pt;
+}

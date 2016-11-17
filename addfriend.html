@@ -9,11 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Friends</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+	<!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+	
+	
+	<link href="css/bootstrap.css" rel="stylesheet"> 
+	
+	
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
@@ -84,38 +88,52 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-		
-		<header style="background-color:#604b1a;color:white">
+
+    	
+	<header style="background-color:#604b1a;color:white">
         <div class="container">
             <div class="row">
-				<span class="input-append span12" style="margin-top:10px;margin-left:10px">
-					<div style="float:left">
-						<span class="search-query">
-						<input type="text" placeholder="Search Community" style="color:#000000;font-family:Montserrat;width:200px;height:25px;margin-top:-25px;text-align:center">
-						<img src="img/2.png" style="margin-right:-30px;margin-top:-25px" height="25px"><br><br>
-					</div>
-				</span>		
                 <div class="col-lg-12">
-                    <h2>Community Profile</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin2.png" width="30%" class="img-responsive img-centered" alt="">
-                            <p style="font-size:20pt">House Community</p><br>
-                            <a href="setting-community.html">
-                            <img src="img/settings.png" height="30px" style="float:right;">
-                            </a><br><br> 
-                            <hr style="color:black;background-color:black;border-color:black" height="10px">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <hr style="color:black;background-color:black;border-color:black" height="10px"><br><br>
-                            <ul style="text-align:left;list-style:none;font-size:15pt">
-                                <li>Member List<a href="member-list.html"><img src="img/expand.png" width="20px" style="margin-left:150px;margin-top:-24px"></a>
-                                </li><br>
-                                <li>Event List<a href="event-list.html"><img src="img/expand.png" width="20px" style="margin-left:150px;margin-top:-24px"></a>
-                                </li>
-                            </ul>
+                    <h2>Add Friends</h2>
+					<hr class="star-primary">
                 </div>
+                
+                
             </div>
+            
+            <br>
+            <br>
+            <br>
+            
+            <form>
+							
+				<input type="text" style="width:400px;height:30px;color:black" placeholder="Enter Friends Username">
+										
+				<img src="img/2.png" height="25px" width="25px" style="margin-top:20px" onclick="myfunction()">
+								
+			</form>
+			
+			<img id="semangat1" style="visibility:hidden" src="img/user.png" class="img-responsive" width=7% alt="">
+			<p id="semangat2" style="visibility:hidden" >Roi</p>
+			<a href="afteradd.html">
+			<button id="semangat3" style="color:blue;visibility:hidden" onclick="berhasiladd()">Add</button>
+			</a>
         </div>
+        
     </header>
+	
+	<script>
+		function myfunction() {
+			document.getElementById("semangat1").style.visibility = "visible";
+			document.getElementById("semangat2").style.visibility = "visible";
+			document.getElementById("semangat3").style.visibility = "visible";
+		}
 		
+		function berhasiladd() {
+			confirm("Berhasil menambahkan teman!");
+		}
+
+
+	</script>
 	</body>
 </html>

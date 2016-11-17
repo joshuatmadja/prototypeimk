@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+	<head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +11,7 @@
     <title>Freelancer - Start Bootstrap Theme</title>
     <!-- Expandable Textfield -->
 	<link href="css/stylesearch.css" rel="stylesheet">
-
+	<link href="css/sidebar.css" rel="stylesheet">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -34,7 +33,6 @@
 </head>
 
 <body id="page-top" class="index">
-
 	<!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
@@ -86,119 +84,59 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
-	<header style="background-color:#662929" id="portfolio">
-        <div class="container">
+    
+		
+	<header style="background-color:#4e6f7c">
+		<span>
+		<div class="sidebar_size" style="background-color:#f1f1f1">
+			<span style="color:black;font-size:20pt">Member Settings</span>
+			<br><br><br>
+			<ul class="sidebar">
+			<li class="li_tata"><a href="member-settings.html">Request</a></li><br><br>
+			<li class="li_tata"><a href="admin-list.html">Admin List</a></li><br><br>
+			<li class="active_tata"><a href="member-list.html">Member List</a></li><br><br>
+			<li class="li_tata"><a href="invite.html">Invite</a></li><br><br>
+			</ul>
+		</div>
+        <div class="container" style="margin-left:18%">
+			
             <div class="row">
                 <div class="col-lg-12">
-						
                     <div class="intro-text">
-						<br><br><br>
-                        <span class="name" style="font-size:35px">My Community</span>
-                        <hr class="star-light">
-                        <br>
-                        <br>
-                        <div class="row">
-							<span class="name" style="font-size:20px;float:left">Private</span><br><hr>
-							<br>
-							<div class="col-sm-4 portfolio-item">
-								<a href="house.html" class="portfolio-link">
-									<div class="caption">
-										<div class="caption-content">
-											<i class="fa fa-search-plus fa-3x"></i><br>
-											House
-										</div>
-									</div>
-									<img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="col-sm-4 portfolio-item">
-								<a href="house.html" class="portfolio-link">
-									<div class="caption">
-										<div class="caption-content">
-											<i class="fa fa-search-plus fa-3x"></i><br>
-											Cake
-										</div>
-									</div>
-									<img src="img/portfolio/cake.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="col-sm-4 portfolio-item">
-								<a href="house.html" class="portfolio-link">
-									<div class="caption">
-										<div class="caption-content">
-											<i class="fa fa-search-plus fa-3x"></i><br>
-											Carnaval
-										</div>
-									</div>
-									<img src="img/portfolio/circus.png" class="img-responsive" alt="">
-								</a>
-							</div>
-						</div>	
-						<div class="row">
-							<span class="name" style="font-size:20px;float:left">Public</span><br><hr>
-							<br>
-							<div class="col-sm-4 portfolio-item">
-								<a href="house.html" class="portfolio-link">
-									<div class="caption">
-										<div class="caption-content">
-											<i class="fa fa-search-plus fa-3x"></i><br>
-											Game
-										</div>
-									</div>
-									<img src="img/portfolio/game.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="col-sm-4 portfolio-item">
-								<a href="house.html" class="portfolio-link">
-									<div class="caption">
-										<div class="caption-content">
-											<i class="fa fa-search-plus fa-3x"></i><br>
-											Money
-										</div>
-									</div>
-									<img src="img/portfolio/safe.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							<div class="col-sm-4 portfolio-item">
-								<a href="house.html" class="portfolio-link">
-									<div class="caption">
-										<div class="caption-content">
-											<i class="fa fa-search-plus fa-3x"></i><br>
-											Sea
-										</div>
-									</div>
-									<img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-								</a>
-							</div>
-							
-						</div>
+                        <span class="name" style="font-size:35px">Member List</span>
+                        <hr class="star-light"><br><br><br>
+                        <div style="margin-left:200px;margin-right:400px">
+							<figure>
+								<img src="img/boy.png" height="100px">
+								<figcaption>Anthony</figcaption>
+							</figure><br>
+							<button values="Accept" style="width:200px;color:black;margin-top:-135px;float:right">Delete Member</button><br><br>
+							<button values="Decline" style="width:200px;color:black;margin-top:-135px;float:right">Grant Access as Admin</button>
+                        </div>
+                        <div style="margin-left:200px;margin-right:400px">
+							<figure>
+								<img src="img\eevee.png" height="100px">
+								<figcaption>Eevee</figcaption>
+							</figure><br>
+							<button values="Accept" style="width:200px;color:black;margin-top:-135px;float:right">Delete Member</button><br><br>
+							<button values="Decline" style="width:200px;color:black;margin-top:-135px;float:right">Grant Access as Admin</button>
+                        </div>
+                        <div style="margin-left:200px;margin-right:400px">
+							<figure>
+								<img src="img/girl.png" height="100px">
+								<figcaption>Megan</figcaption>
+							</figure><br>
+							<button values="Accept" style="width:200px;color:black;margin-top:-135px;float:right">Delete Member</button><br><br>
+							<button values="Decline" style="width:200px;color:black;margin-top:-135px;float:right">Grant Access as Admin</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+		</span>
+        
     </header>
-    
-    
-
-	<!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-</body>
-
+	
+</body>	
 </html>
-
-
