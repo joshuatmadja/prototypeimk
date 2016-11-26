@@ -1,0 +1,128 @@
+.bawahnavbar{
+  padding-top: 110px;
+  padding-bottom: 0px;
+}
+
+.utama{
+  
+}
+
+.elemenonline{
+  border-bottom: 1px solid #ddd;
+}
+
+.namaonline{
+  overflow:hidden;
+}
+
+.fixed-right {
+  position: fixed;
+  top:110px;
+  bottom: 0;
+  
+}
+
+@media (min-width: 768px) {
+    .fixed-right {
+    border-radius: 0;
+  }
+}
+
+.fixed-right {
+  right: 0;
+  margin-right: 0;
+  border-width: 1px 0 0;
+}
+
+#untukchat {
+  background-attachment: fixed;
+    background-clip: border-box;
+    background-color: white;
+    background-origin: padding-box;
+    background-position: center top;
+    background-repeat: repeat;
+  z-index:30;
+    border: 1px solid #304445;
+    bottom: 0;
+    height: 456px;
+    position: fixed;
+    right: 241px;
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    visibility: hidden;
+}
+
+#untukchat:target{
+    visibility: visible;
+}
+
+
+/*untuk Add Friend*/
+
+
+#semangat0 {
+  visibility: hidden;
+}
+
+
+#semangat0:target {
+  visibility: visible;
+}
+
+.addwindow {
+  width: 400px;
+  height: 100px;
+  background: #fff;
+  border-radius: 10px;
+  position: fixed;
+  padding: 10px;
+  text-align: center;
+  margin: 15% auto;
+  top:40px;
+  left:450px;
+}
+
+#addpopup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  top:0;
+  left:0;
+  z-index: 9999;
+  visibility: hidden;
+}
+
+#addpopup:target{
+  visibility: visible;
+}
+
+#deletepopup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  top:0;
+  left:0;
+  z-index: 9999;
+  visibility: hidden;
+}
+
+#deletepopup:target{
+  visibility: visible;
+}
+
+#berhasildeletepopup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  top:0;
+  left:0;
+  z-index: 9999;
+  visibility: hidden;
+}
+
+#berhasildeletepopup:target{
+  visibility: visible;
+}

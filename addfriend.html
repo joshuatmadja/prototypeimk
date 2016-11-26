@@ -20,18 +20,12 @@
 	
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-
+    <link href="css/untukborder.css" rel="stylesheet">
+     <link href="css/styleimk.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -112,31 +106,29 @@
 							
 				<input type="text" style="width:400px;height:30px;color:black" placeholder="Enter Friends Username">
 										
-				<img src="img/2.png" height="25px" width="25px" style="margin-top:20px" onclick="myfunction()">
-								
+				<!--<img src="img/2.png" height="25px" width="25px" style="margin-top:20px" onclick="myfunction()"> -->
+				<button style="color:blue" onclick="location.href='#semangat0'">Cari </button>			
 			</form>
-			
-			<img id="semangat1" style="visibility:hidden" src="img/user.png" class="img-responsive" width=7% alt="">
-			<p id="semangat2" style="visibility:hidden" >Roi</p>
-			<a href="afteradd.html">
-			<button id="semangat3" style="color:blue;visibility:hidden" onclick="berhasiladd()">Add</button>
-			</a>
+			<br>
+            <div id="semangat0" >
+    			<img src="img/user.png" class="img-responsive" alt="" style="width:8% ">
+    			<p id="semangat2" >Roi</p>
+    			<button id="semangat3" style="color:blue;" onclick="location.href='#addpopup'">Add </button>
+            </div>
         </div>
+
+        <div id="addpopup">
+                <div class="addwindow">
+                <a href="#" class="close-button" title="close"  style="font-weight:bold;">Anda berhasil menambahkan teman</a><br><br>
+                <a href="friends.html" class="close-button" title="close" style="color:blue; font-weight:bold;">OK</a>
+                <br>
+                </div>
+        </div>
+
+
         
     </header>
 	
-	<script>
-		function myfunction() {
-			document.getElementById("semangat1").style.visibility = "visible";
-			document.getElementById("semangat2").style.visibility = "visible";
-			document.getElementById("semangat3").style.visibility = "visible";
-		}
-		
-		function berhasiladd() {
-			confirm("Berhasil menambahkan teman!");
-		}
 
-
-	</script>
 	</body>
 </html>
