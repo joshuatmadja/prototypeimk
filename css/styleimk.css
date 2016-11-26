@@ -16,6 +16,13 @@
 	background-color: transparent;
 }
 
+.window{
+	height:150px;
+}
+.yesno td{
+	padding: 15px;
+}
+
 .post{
 	font-weight: bold;
 	font-size: 18px;
